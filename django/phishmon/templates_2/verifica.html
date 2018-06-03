@@ -1,0 +1,27 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <body background="{% static "images/fondo.jpg" %}">
+  <title>Monitor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static "css/estilo_topbar.css" %}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+ <div class="topnav">
+  <a href="../index.html">Home</a>
+  <a href="../monitor.html">Monitor</a>
+  <a  href="../historico.html" >Histórico</a>
+  <a href="../reportes.html" >Reportes</a>
+  <a class="active">Verifica Url</a>
+   <input type="text" name="search" placeholder="Search.."> 
+</div> 
+  <br>

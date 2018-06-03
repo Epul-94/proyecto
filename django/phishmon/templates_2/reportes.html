@@ -1,0 +1,128 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <body background="{% static "images/fondo.jpg" %}">
+  <title>Monitor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static "css/estilo_topbar.css" %}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+ <div class="topnav">
+  <a href="../index.html">Home</a>
+  <a href="../monitor.html">Monitor</a>
+  <a  href="../historico.html" >Histórico</a>
+  <a class="active" >Reportes</a>
+  <a href="../verifica.html">Verifica Url</a>
+   <input type="text" name="search" placeholder="Search.."> 
+</div> 
+  <br>
+
+
+  <h2>GENERAR REPORTE:</h2>
+
+  <br><br>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-sm-6">
+
+      <h3>Gráfica: </h3>
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="top5pais">
+  <label class="form-check-label" for="top5pais">
+    &nbsp &nbsp &nbsp Top 5 paises
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="top5host">
+  <label class="form-check-label" for="top5host">
+    &nbsp &nbsp &nbsp Top 5 Host
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="phisite">
+  <label class="form-check-label" for="phisite">
+    &nbsp &nbsp &nbsp Sitios Phishing
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="dashboard">
+  <label class="form-check-label" for="dashboard">
+    &nbsp &nbsp &nbsp Dashboard
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="sectoafec">
+  <label class="form-check-label" for="sectoafec">
+    &nbsp &nbsp &nbsp Sectores afectaods
+  </label>
+</div>
+
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="entiafec">
+  <label class="form-check-label" for="entiafec">
+    &nbsp &nbsp &nbsp Entidades Afectadas
+  </label>
+</div>
+
+</div>
+
+
+<div class="col-sm-6">
+
+  <h3>Tiempo: </h3>
+
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="dia" value="option1" checked>
+    <label class="form-check-label" for="dia">
+     &nbsp &nbsp &nbsp Dia
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="semana" value="option2">
+    <label class="form-check-label" for="semana">
+     &nbsp &nbsp &nbsp Semana
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="mes" value="option3">
+    <label class="form-check-label" for="mes">
+     &nbsp &nbsp &nbsp Mes
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="6mes" value="option4">
+    <label class="form-check-label" for="6mes">
+     &nbsp &nbsp &nbsp 6 meses
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="anio" value="option5">
+    <label class="form-check-label" for="anio">
+     &nbsp &nbsp &nbsp Año
+    </label>
+  </div>
+
+
+    </div>
+  </div>
+</div>

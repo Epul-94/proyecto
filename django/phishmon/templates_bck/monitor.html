@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="css/style-monitor.css" />
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<title> Monitor </title> 
+	</head>
+		<header class="masthead text-center text-white d-flex" id="index">
+      			<!--Navigation bar-->
+			<div id="nav-placeholder">
+
+			</div>
+
+			<script>
+			$(function(){
+  			$("#nav-placeholder").load("menu.html");
+			});
+			</script>
+			<!--end of Navigation bar-->
+		</header>
+		<body>
+			<section id="monitor">
+	      			<div class="container">
+	        			<div class="row">
+	          				<div class="col-lg-8 mx-auto text-center">
+	            					<h3 class="section-heading">MONITOR</h3>
+	            					<hr >
+	            					<p class="text-faded mb-4">Esta sección se va a desplegar cuando se oprima el botón Monitor</p>
+							<p>REPORTA EL SITIO</p>
+			
+							<form>
+								<label for="nombre"></label>
+								<input type="text" id="nombre" placeholder="&nbsp;Nombre"/> 
+
+								<label for="email"></label>
+								<input type="text" id="nombre" placeholder="&nbsp;Email"/>
+
+								<label for="asunto"></label>
+								<input type="text" id="nombre" placeholder="&nbsp;Asunto"/>
+
+								<label for="mensaje"></label>
+								<textarea cols="40" rows="10" placeholder="&nbsp;Mensaje"></textarea>
+		
+								<input type="submit" value="Enviar" />
+							</form>
+	          				</div>
+	        			</div>
+	      			</div>
+			</section>
+		
+
+			<!-- Bootstrap core JavaScript -->
+		        <script src="vendor/jquery/jquery.min.js"></script>
+		        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	
+		         <!-- Plugin JavaScript -->
+		         <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+		         <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+		         <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+		         <!-- Custom scripts for this template -->
+		         <script src="js/creative.min.js"></script>
+		</body>	
+</html>

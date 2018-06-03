@@ -1,0 +1,177 @@
+
+  {% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <body background="{% static "images/fondo.jpg" %}">
+  <title>Monitor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static "css/estilo_topbar.css" %}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+ <div class="topnav">
+  <a href="../index.html">Home</a>
+  <a class="active">Monitor</a>
+  <a href="../historico.html">Histórico</a>
+   <a href="../reportes.html" >Reportes</a>
+  <a href="../verifica.html">Verifica Url</a>
+   <input type="text" name="search" placeholder="Search.."> 
+   
+</div> 
+  <br>
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-sm-3">
+
+       <label for="idp">Id Phishing</label>
+    <input class="form-control" id="idp" type="text">
+
+    </div>
+    <div class="col-sm-3">
+      <label for="Status">Status</label>
+    <input class="form-control" id="Status" type="text">
+    </div>
+    
+    <div class="col-sm-3"></div>
+
+
+    <div class="col-sm-3">
+      <label for="fuente">Fuente de detección:</label>
+    <input class="form-control" id="fuente" type="text"></div>
+  </div>
+</div>
+
+<br><br><br>
+
+
+<div class="container-fluid">
+  <div class="row">
+
+  <div class="col-sm-2">
+    <label for="fecha">Fecha de detección:</label>
+    <input class="form-control" id="fecha" type="text">
+  </div>
+
+  <div class="col-sm-2">
+    <label for="nom_arch">Nombre del archivo</label>
+    <input class="form-control" id="nom_arch" type="text">
+  </div>
+  
+  <div class="col-sm-2">
+    <label for="Codificacion">Codificación</label>
+    <input class="form-control" id="Codificacion" type="text">
+  </div>
+  
+  
+  <div class="col-sm-2"> 
+    <label for="Codificacion">CC </label>
+    <input class="form-control" id="Codificacion" type="text">
+  </div>
+  
+  <div class="col-sm-2">
+    <label for="Hosting">Hosting</label>
+    <input class="form-control" id="Hosting" type="text">
+  </div>
+  </div>
+</div>
+
+<br><br><br>
+
+<div class="container-fluid">
+  <div class="row">
+
+  <div class="col-sm-6">
+    <label for="cap_dominio">Captura del dominio</label>
+    <br>
+     <img src="{% static "images/uno.jpg" %}" class="rounded" alt="...">
+  </div>
+
+  <div class="col-sm-6">
+    <label for="captura_phish">Sitio Phishing</label>
+    <br>
+     <img src="{% static "images/uno.jpg" %}" class="rounded" alt="...">
+  </div>
+</div>
+</div>
+
+<br><br>
+
+<div align="center">
+<h4>Valida con:</h4> <br>
+<button class="btn success">TOR</button>
+<button class="btn info">Phish-Mod</button>
+<button class="btn danger">Proxy</button>
+</div> 
+
+<br>
+
+<div class="container-fluid">
+  <div class="row">
+
+  <div class="col-sm-6">
+ <div class="form-group">
+  <label for="comment">CURL Ultima Consulta:</label>
+  <textarea class="form-control" rows="5" id="curl1"></textarea>
+</div> 
+</div> 
+
+<div class="col-sm-6">
+ <div class="form-group">
+  <label for="comment">CURL Consulta 2:</label>
+  <textarea class="form-control" rows="5" id="curl2"></textarea>
+</div> 
+</div> 
+</div> 
+</div> 
+<br>
+<div align="center">
+<label for="cap_dominio">Captura del dominio</label>
+    <br>
+     <img src="{% static "images/uno.jpg" %}" class="rounded" alt="...">
+</div> 
+
+<br><br>
+
+<h2>REPORTE</h2>
+
+
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">De:</label>
+      <input type="email" class="form-control" id="inputEmail4" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Para:</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+  </div>
+  <div class="form-group col-md-6">
+      <label for="Asunto">Asunto</label>
+      <input type="email" class="form-control" id="Asunto">
+    </div>
+<br>
+  <div class="form-group col-md-6">
+  <label for="comment">Plantilla:</label>
+  <textarea class="form-control" rows="5" id="Plantilla"></textarea>
+</div> 
+
+<div align="right">
+  <button type="submit" class="btn btn-info">Enviar</button>
+</div>
+</form>
+
+
+
+
+</body>
+</html>
